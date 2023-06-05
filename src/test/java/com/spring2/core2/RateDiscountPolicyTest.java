@@ -1,7 +1,8 @@
 package com.spring2.core2;
 
-import com.spring1.core.member.Grade;
-import com.spring1.core.member.Member;
+import com.spring2.core2.discount.RateDiscountPolicy;
+import com.spring2.core2.member.Grade;
+import com.spring2.core2.member.Member;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
