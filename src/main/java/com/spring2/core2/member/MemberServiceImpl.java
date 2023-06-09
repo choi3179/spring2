@@ -1,9 +1,14 @@
 package com.spring2.core2.member;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MemberServiceImpl implements MemberService{
 
     private final MemberRepository memberRepository;
 
+    @Autowired  // ac.getBean(MemberRepository.class)와 같은 효과(의존관계 자동주입 설정)
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
